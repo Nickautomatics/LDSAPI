@@ -16,5 +16,10 @@ namespace TestAPI.BaseClass
         {
             return @"SELECT Oid, FirstName, LastName, UserName, [Password] FROM AssistantTeacher where GCRecord is null";
         }
+
+        public static string GetWeek()
+        {
+            return @"SELECT Oid, Weeks, ActiveWeek, Program FROM ProgramWeek where GCRecord is null";
+        }
     }
 }
